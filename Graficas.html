@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjetas Graficas</title>
+    <link rel="stylesheet" href="laptop.css">
+    <script defer>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll(".menu label").forEach(label => {
+                label.addEventListener("click", function() {
+                    let submenu = this.nextElementSibling;
+                    if (submenu.style.display === "block") {
+                        submenu.style.display = "none";
+                    } else {
+                        document.querySelectorAll(".submenu").forEach(sub => sub.style.display = "none");
+                        submenu.style.display = "block";
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" > <img  src="img/Screenshot 2025-02-28 145101.png"  alt="Logo" class="logo"></a> 
+        <a href="#sidebar" class="menu-btn">
+            &#9776; Catálogo
+        </a>
+    </a>
+    <a href="#" class="cart-btn">
+        🛒 Tu Carrito
+    </a>
+    <div id="sidebar" class="sidebar">
+        <a href="#" class="close-btn">✖</a>
+        <ul class="menu">
+            <li>
+                <label> Ordenadores </label>
+                <ul class="submenu" style="display: none;">
+                    <li><a href="laptops.html">Laptops</a></li>
+                    <li><a href="pc.html">PC sobremesa</a></li>
+                    
+                </ul>
+            </li>
+            <li>
+                <label> Componentes </label>
+                <ul class="submenu" style="display: none;">
+                    <li><a href="procesadores.html">Procesadores</a></li>
+                    <li><a href="Graficas.html">Tarjeta Grafica</a></li>
+                    <li><a href="RAM.html">RAM</a></li>
+                </ul>
+
+            </li>
+            <label> Perifericos </label>
+            <ul class="submenu" style="display: none;">
+                <li><a href="Auriculares.html">Auriculares</a></li>
+                <li><a href="teclado.html">Teclados</a></li>
+                <li><a href="mouse.html">Mouse</a></li>
+        </ul>
+    </div>
+
+<hr>
+    <main class="catalogo">
+        <h1 class="catalogo-titulo">Catálogo de Tarjetas Graficas</h1>
+        <section class="productos">
+            <div class="product-card">
+                <span class="discount">-10%</span>
+                <img src="https://thumb.pccomponentes.com/w-530-530/articles/1077/10771881/1517-gigabyte-amd-radeon-rx-7800-xt-gaming-oc-16gb-gddr6.jpg" alt="Producto 1">
+                <h2>Gigabyte AMD Radeon RX 7800 XT GAMING OC 16GB GDDR6</h2>
+                <p class="precio">$539</p>
+                <a href="vermas21.html" class="buy-btn">Ver más</a>
+            </div>
+            <div class="product-card">
+                <img src="https://thumb.pccomponentes.com/w-530-530/articles/1087/10871757/1587-asus-tuf-gaming-geforce-rtx-5070-oc-12gb-gddr7-reflex-2-rtx-ai-dlss4.jpg" alt="Producto 2">
+                <h2>Tarjeta Gráfica ASUS TUF Gaming GeForce RTX 5070 OC 12GB GDDR7 Reflex 2 RTX AI DLSS4</h2>
+                <p class="precio">$930</p>
+                <a href="vermas22.html" class="buy-btn">Ver más</a>
+            </div>
+            <div class="product-card">
+                <span class="discount">-45%</span>
+                <img src="https://thumb.pccomponentes.com/w-530-530/articles/1081/10811401/1193-zotac-gaming-geforce-rtx-3050-eco-solo-8gb-gddr6.jpg" alt="Producto 3">
+                <h2>Zotac Gaming GeForce RTX 3050 ECO SOLO 8GB GDDR6</h2>
+                <p class="precio">$234</p>
+                <a href="vermas23.html" class="buy-btn">Ver más</a>
+            </div>
+            <div class="product-card">
+                <img src="https://thumb.pccomponentes.com/w-530-530/articles/1086/10867515/120-gigabyte-amd-radeon-rx-9070-xt-aorus-elite-16gb-gddr6.jpg" alt="Producto 4">
+                <h2>Tarjeta Gráfica Gigabyte AMD Radeon RX 9070 XT AORUS ELITE 16GB GDDR6</h2>
+                <p class="precio">$1167</p>
+                <a href="vermas24.html" class="buy-btn">Ver más</a>
+            </div>
+            <div class="product-card">
+                <span class="discount">-50%</span>
+                <img src="https://thumb.pccomponentes.com/w-530-530/articles/21/214257/zt-t20600h-10m-image1.jpg" alt="Producto 5">
+                <h2>Zotac Gaming GeForce RTX 2060 6GB GDDR6</h2>
+                <p class="precio">$287</p>
+                <a href="vermas25.html" class="buy-btn">Ver más</a>
+            </div>
+            <div class="product-card">
+                <span class="discount">-30%</span>
+                <img src="https://thumb.pccomponentes.com/w-530-530/articles/1029/10297889/1943-msi-amd-radeon-rx-6750xt-mech-2x-oc-12gb-gddr6.jpg" alt="Producto 6">
+                <h2>MSI AMD Radeon RX 6750XT MECH 2X OC 12GB GDDR6</h2>
+                <p class="precio">$596</p>
+                <a href="vermas26.html" class="buy-btn">Ver más</a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <ul class="socials">
+            <li><img  src="img/facebook.png" alt="Facebook"><span><a href="https://www.facebook.com/">Facebook</a></span></li>
+            <li><img src="img/gorjeo.png" alt="Twitter"><span><a href="https://x.com/">Twitter</a></span></li>
+            <li><img src="img/instagram.png" alt="Instagram"><span><a href="https://www.instagram.com/">Instagram</a></span></li>
+        </ul>
+        <div class="payment-methods">
+            <p>Métodos de Pago</p>
+            <div class="payment-icons">
+                <img src="img/visa.png" alt="Visa">
+                <img src="img/tarjeta1.png" alt="Mastercard">
+                <img src="img/logotipo-de-paypal.png" alt="PayPal">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

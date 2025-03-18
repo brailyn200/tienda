@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teclados</title>
+    <link rel="stylesheet" href="laptop.css">
+    <script defer>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll(".menu label").forEach(label => {
+                label.addEventListener("click", function() {
+                    let submenu = this.nextElementSibling;
+                    if (submenu.style.display === "block") {
+                        submenu.style.display = "none";
+                    } else {
+                        document.querySelectorAll(".submenu").forEach(sub => sub.style.display = "none");
+                        submenu.style.display = "block";
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" > <img  src="img/Screenshot 2025-02-28 145101.png"  alt="Logo" class="logo"></a> 
+        <a href="#sidebar" class="menu-btn">
+            &#9776; Catálogo
+        </a>
+    </a>
+    <a href="#" class="cart-btn">
+        🛒 Tu Carrito
+    </a>
+    <div id="sidebar" class="sidebar">
+        <a href="#" class="close-btn">✖</a>
+        <ul class="menu">
+            <li>
+                <label> Ordenadores </label>
+                <ul class="submenu" style="display: none;">
+                    <li><a href="laptops.html">Laptops</a></li>
+                    <li><a href="pc.html">PC sobremesa</a></li>
+                    
+                </ul>
+            </li>
+            <li>
+                <label> Componentes </label>
+                <ul class="submenu" style="display: none;">
+                    <li><a href="procesadores.html">Procesadores</a></li>
+                    <li><a href="Graficas.html">Tarjeta Grafica</a></li>
+                    <li><a href="RAM.html">RAM</a></li>
+                </ul>
+
+            </li>
+            <label> Perifericos </label>
+            <ul class="submenu" style="display: none;">
+                <li><a href="Auriculares.html">Auriculares</a></li>
+                <li><a href="teclado.html">Teclados</a></li>
+                <li><a href="mouse.html">Mouse</a></li>
+        </ul>
+    </div>
+
+<hr>
+    <main class="catalogo">
+        <h1 class="catalogo-titulo">Catálogo de Teclados</h1>
+        <section class="productos">
+            <div class="product-card">
+                
+                <img src="https://thumb.pccomponentes.com/w-530-530/articles/1080/10802403/1174-tempest-k20-beast-teclado-mecanico-inalambrico-gaming-rgb-tkl-mini-blanco.jpg" alt="Producto 1">
+                <h2>Tempest K20 Beast Teclado Mecánico Inalámbrico Gaming RGB TKL Mini Blanco</h2>
+                <p class="precio">$54</p>
+                <a href="producto1.html" class="buy-btn">Ver más</a>
+            </div>
+            <div class="product-card">
+                <img src="https://thumb.pccomponentes.com/w-530-530/articles/1081/10813280/1649-forgeon-clutch-teclado-gaming-wireless-rgb-60-switch-brown-review.jpg" alt="Producto 2">
+                <h2>Forgeon Clutch Teclado Gaming Wireless RGB 60% Switch Brown</h2>
+                <p class="precio">$64</p>
+                <a href="producto2.html" class="buy-btn">Ver más</a>
+            </div>
+            <div class="product-card">
+                <span class="discount">-15%</span>
+                <img src="https://thumb.pccomponentes.com/w-530-530/articles/1081/10817494/1280-tempest-k8-radiance-rgb-teclado-gaming-retroiluminado-comprar.jpg" alt="Producto 3">
+                <h2>Tempest K8 Radiance RGB Teclado Gaming Retroiluminado</h2>
+                <p class="precio">$11</p>
+                <a href="producto3.html" class="buy-btn">Ver más</a>
+            </div>
+            <div class="product-card">
+                <img src="https://thumb.pccomponentes.com/w-530-530/articles/1080/10805476/1973-asus-rog-azoth-teclado-mecanico-moonlight-white.jpg" alt="Producto 4">
+                <h2>ASUS ROG Azoth Teclado Mecánico Moonlight QWERTY Español White</h2>
+                <p class="precio">$239</p>
+                <a href="producto4.html" class="buy-btn">Ver más</a>
+            </div>
+            <div class="product-card">
+                <span class="discount">-10%</span>
+                <img src="https://thumb.pccomponentes.com/w-530-530/articles/25/254061/tempest-diablo-teclado-mecanico-gaming-rgb-switch-red-52769723-1c9e-484a-822d-35d37be7d06a.jpg" alt="Producto 5">
+                <h2>Tempest Diablo Teclado Mecánico Gaming RGB Switch Red</h2>
+                <p class="precio">$59</p>
+                <a href="producto5.html" class="buy-btn">Ver más</a>
+            </div>
+            <div class="product-card">
+                <span class="discount">-30%</span>
+                <img src="https://thumb.pccomponentes.com/w-530-530/articles/1060/10608771/1998-msi-vigor-gk71-sonic-teclado-mecanico-gaming-rgb-switch-red.jpg" alt="Producto 6">
+                <h2>MSI Vigor GK71 Sonic Teclado Mecánico Gaming RGB Switch Red</h2>
+                <p class="precio">$89</p>
+                <a href="producto6.html" class="buy-btn">Ver más</a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <ul class="socials">
+            <li><img  src="img/facebook.png" alt="Facebook"><span><a href="https://www.facebook.com/">Facebook</a></span></li>
+            <li><img src="img/gorjeo.png" alt="Twitter"><span><a href="https://x.com/">Twitter</a></span></li>
+            <li><img src="img/instagram.png" alt="Instagram"><span><a href="https://www.instagram.com/">Instagram</a></span></li>
+        </ul>
+        <div class="payment-methods">
+            <p>Métodos de Pago</p>
+            <div class="payment-icons">
+                <img src="img/visa.png" alt="Visa">
+                <img src="img/tarjeta1.png" alt="Mastercard">
+                <img src="img/logotipo-de-paypal.png" alt="PayPal">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptops</title>
+    <link rel="stylesheet" href="laptop.css">
+    <script defer>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll(".menu label").forEach(label => {
+                label.addEventListener("click", function() {
+                    let submenu = this.nextElementSibling;
+                    if (submenu.style.display === "block") {
+                        submenu.style.display = "none";
+                    } else {
+                        document.querySelectorAll(".submenu").forEach(sub => sub.style.display = "none");
+                        submenu.style.display = "block";
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" > <img  src="img/Screenshot 2025-02-28 145101.png"  alt="Logo" class="logo"></a> 
+        <a href="#sidebar" class="menu-btn">
+            &#9776; Catálogo
+        </a>
+    </a>
+    <a href="#" class="cart-btn">
+        🛒 Tu Carrito
+    </a>
+    <div id="sidebar" class="sidebar">
+        <a href="#" class="close-btn">✖</a>
+        <ul class="menu">
+            <li>
+                <label> Ordenadores </label>
+                <ul class="submenu" style="display: none;">
+                    <li><a href="laptops.html">Laptops</a></li>
+                    <li><a href="pc.html">PC sobremesa</a></li>
+                    
+                </ul>
+            </li>
+            <li>
+                <label> Componentes </label>
+                <ul class="submenu" style="display: none;">
+                    <li><a href="procesadores.html">Procesadores</a></li>
+                    <li><a href="Graficas.html">Tarjeta Grafica</a></li>
+                    <li><a href="RAM.html">RAM</a></li>
+                </ul>
+
+            </li>
+            <label> Perifericos </label>
+            <ul class="submenu" style="display: none;">
+                <li><a href="Auriculares.html">Auriculares</a></li>
+                <li><a href="teclado.html">Teclados</a></li>
+                <li><a href="mouse.html">Mouse</a></li>
+        </ul>
+    </div>
+
+<hr>
+    <main class="catalogo">
+        <h1 class="catalogo-titulo">Catálogo de Laptops</h1>
+        <section class="productos">
+            <div class="product-card">
+                <span class="discount">-20%</span>
+                <img src="https://thumb.pccomponentes.com/w-530-530/articles/1084/10846498/1331-msi-thin-15-b12uc-1839xes-intel-core-i7-12650h-16gb-1tb-ssd-rtx-3050-156.jpg" alt="Producto 1">
+                <h2>Portátil MSI Thin 15 B12UC-1839XES Intel Core i7-12650H/16GB/1TB SSD/RTX 3050/15.6"</h2>
+                <p class="precio">$749</p>
+                <a href="vermas3.html" class="buy-btn">Ver más</a>
+            </div>
+            <div class="product-card">
+                <img src="https://thumb.pccomponentes.com/w-530-530/articles/1085/10853131/1843-asus-vivobook-15-m1502ya-nj506w-amd-ryzen-7-7730u-16gb-512gb-ssd-156.jpg" alt="Producto 2">
+                <h2>Portátil ASUS Vivobook 15 M1502YA-NJ506W AMD Ryzen 7 7730U/16GB/512GB SSD/15.6"</h2>
+                <p class="precio">$529</p>
+                <a href="vermas4.html" class="buy-btn">Ver más</a>
+            </div>
+            <div class="product-card">
+                <span class="discount">-15%</span>
+                <img src="https://thumb.pccomponentes.com/w-530-530/articles/1086/10861596/1629-apple-macbook-air-apple-m3-8-nucleos-16gb-256gb-ssd-gpu-8-nucleos-136-medianoche.jpg" alt="Producto 3">
+                <h2>Portátil Apple MacBook Air Apple M3 8 Núcleos/16GB/256GB SSD/GPU 8 Núcleos/13.6"</h2>
+                <p class="precio">$1179</p>
+                <a href="vermas5.html" class="buy-btn">Ver más</a>
+            </div>
+            <div class="product-card">
+                <img src="https://thumb.pccomponentes.com/w-530-530/articles/1080/10801810/1284-msi-prestige-16-ai-studio-b1vfg-032es-intel-core-ultra-9-185h-32gb-1tb-ssd-rtx-4060-16.jpg" alt="Producto 4">
+                <h2>MSI Prestige 16 AI Studio B1VFG-032ES Intel Evo Core Ultra 9 185H/32GB/1TB SSD/RTX 4060/16"</h2>
+                <p class="precio">$2092</p>
+                <a href="vermas6.html" class="buy-btn">Ver más</a>
+            </div>
+            <div class="product-card">
+                <span class="discount">-10%</span>
+                <img src="https://thumb.pccomponentes.com/w-530-530/articles/1073/10734439/1702-lenovo-thinkpad-t470-intel-core-i5-7200u-8gb-256gb-ssd-14.jpg" alt="Producto 5">
+                <h2>Lenovo ThinkPad T470 Intel Core i5-6300U/8GB/256GB SSD/14"</h2>
+                <p class="precio">$233</p>
+                <a href="vermas7.html" class="buy-btn">Ver más</a>
+            </div>
+            <div class="product-card">
+                <span class="discount">-30%</span>
+                <img src="https://thumb.pccomponentes.com/w-530-530/articles/1081/10812222/1834-msi-cyborg-15-a13vf-879xes-intel-core-i7-13620h-32gb-1tb-ssd-rtx-4060-156-c61e902c-f640-48da-9f43-5bc595c18181.jpg" alt="Producto 6">
+                <h2>MSI Cyborg 15 A13VF-879XES Intel Core i7-13620H/32GB/1TB SSD/RTX 4060/15.6"</h2>
+                <p class="precio">$989</p>
+                <a href="vermas8.html" class="buy-btn">Ver más</a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <ul class="socials">
+            <li><img  src="img/facebook.png" alt="Facebook"><span><a href="https://www.facebook.com/">Facebook</a></span></li>
+            <li><img src="img/gorjeo.png" alt="Twitter"><span><a href="https://x.com/">Twitter</a></span></li>
+            <li><img src="img/instagram.png" alt="Instagram"><span><a href="https://www.instagram.com/">Instagram</a></span></li>
+        </ul>
+        <div class="payment-methods">
+            <p>Métodos de Pago</p>
+            <div class="payment-icons">
+                <img src="img/visa.png" alt="Visa">
+                <img src="img/tarjeta1.png" alt="Mastercard">
+                <img src="img/logotipo-de-paypal.png" alt="PayPal">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

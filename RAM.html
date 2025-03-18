@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAM</title>
+    <link rel="stylesheet" href="laptop.css">
+    <script defer>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll(".menu label").forEach(label => {
+                label.addEventListener("click", function() {
+                    let submenu = this.nextElementSibling;
+                    if (submenu.style.display === "block") {
+                        submenu.style.display = "none";
+                    } else {
+                        document.querySelectorAll(".submenu").forEach(sub => sub.style.display = "none");
+                        submenu.style.display = "block";
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" > <img  src="img/Screenshot 2025-02-28 145101.png"  alt="Logo" class="logo"></a> 
+        <a href="#sidebar" class="menu-btn">
+            &#9776; Catálogo
+        </a>
+    </a>
+    <a href="#" class="cart-btn">
+        🛒 Tu Carrito
+    </a>
+    <div id="sidebar" class="sidebar">
+        <a href="#" class="close-btn">✖</a>
+        <ul class="menu">
+            <li>
+                <label> Ordenadores </label>
+                <ul class="submenu" style="display: none;">
+                    <li><a href="laptops.html">Laptops</a></li>
+                    <li><a href="pc.html">PC sobremesa</a></li>
+                    
+                </ul>
+            </li>
+            <li>
+                <label> Componentes </label>
+                <ul class="submenu" style="display: none;">
+                    <li><a href="procesadores.html">Procesadores</a></li>
+                    <li><a href="Graficas.html">Tarjeta Grafica</a></li>
+                    <li><a href="RAM.html">RAM</a></li>
+                </ul>
+
+            </li>
+            <label> Perifericos </label>
+            <ul class="submenu" style="display: none;">
+                <li><a href="Auriculares.html">Auriculares</a></li>
+                <li><a href="teclado.html">Teclados</a></li>
+                <li><a href="mouse.html">Mouse</a></li>
+        </ul>
+    </div>
+
+<hr>
+    <main class="catalogo">
+        <h1 class="catalogo-titulo">Catálogo de RAM's</h1>
+        <section class="productos">
+            <div class="product-card">
+                
+                <img src="https://thumb.pccomponentes.com/w-530-530/articles/1066/10662597/152-corsair-vengeance-rgb-ddr5-4800mhz-32gb-2x16gb-cl30.jpg" alt="Producto 1">
+                <h2>Corsair Vengeance RGB DDR5 6000MHz PC5-48000 32GB 2x16GB CL30 Memoria Dual AMD EXPO e Intel XMP</h2>
+                <p class="precio">$179</p>
+                <a href="producto1.html" class="buy-btn">Ver más</a>
+            </div>
+            <div class="product-card">
+                <span class="discount">-2%</span>
+                <img src="https://thumb.pccomponentes.com/w-530-530/articles/43/432676/1325-kingston-fury-beast-ddr4-3200-mhz-32gb-2x16gb-cl16.jpg" alt="Producto 2">
+                <h2>Kingston FURY Beast DDR4 3200 MHz 32GB 2x16GB CL16</h2>
+                <p class="precio">$64</p>
+                <a href="producto2.html" class="buy-btn">Ver más</a>
+            </div>
+            <div class="product-card">
+                <span class="discount">-15%</span>
+                <img src="https://thumb.pccomponentes.com/w-530-530/articles/1065/10657909/1685-team-group-t-force-delta-rgb-ddr5-6000mhz-32gb-2x16gb-cl30-foto.jpg" alt="Producto 3">
+                <h2>Team Group T-Force Delta RGB DDR5 6000MHz 32GB 2x16GB CL30</h2>
+                <p class="precio">$108</p>
+                <a href="producto3.html" class="buy-btn">Ver más</a>
+            </div>
+            <div class="product-card">
+                <img src="https://thumb.pccomponentes.com/w-530-530/articles/1086/10863542/1881-biwin-black-opal-dw100-ddr5-rgb-6000mhz-32gb-2x16gb-cl30-blanca.jpg" alt="Producto 4">
+                <h2>Memoria RAM Biwin Black Opal DW100 DDR5 RGB 6000MHz 32GB 2x16GB CL30 Blanca</h2>
+                <p class="precio">$127</p>
+                <a href="producto4.html" class="buy-btn">Ver más</a>
+            </div>
+            <div class="product-card">
+                <span class="discount">-10%</span>
+                <img src="https://thumb.pccomponentes.com/w-530-530/articles/40/407708/1453-crucial-so-dimm-ddr4-3200mhz-pc4-25600-16gb-cl22.jpg" alt="Producto 5">
+                <h2>Crucial SO-DIMM DDR4 3200MHz PC4-25600 16GB CL22</h2>
+                <p class="precio">$24</p>
+                <a href="producto5.html" class="buy-btn">Ver más</a>
+            </div>
+            <div class="product-card">
+                <span class="discount">-16%</span>
+                <img src="https://thumb.pccomponentes.com/w-530-530/articles/1084/10845555/1108-acer-predator-vesta-ii-rgb-ddr5-6000mhz-32gb-2x16gb-cl32.jpg" alt="Producto 6">
+                <h2>Memoria RAM Acer Predator Vesta II RGB DDR5 6000MHz 32GB 2x16GB CL32</h2>
+                <p class="precio">$132</p>
+                <a href="producto6.html" class="buy-btn">Ver más</a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <ul class="socials">
+            <li><img  src="img/facebook.png" alt="Facebook"><span><a href="https://www.facebook.com/">Facebook</a></span></li>
+            <li><img src="img/gorjeo.png" alt="Twitter"><span><a href="https://x.com/">Twitter</a></span></li>
+            <li><img src="img/instagram.png" alt="Instagram"><span><a href="https://www.instagram.com/">Instagram</a></span></li>
+        </ul>
+        <div class="payment-methods">
+            <p>Métodos de Pago</p>
+            <div class="payment-icons">
+                <img src="img/visa.png" alt="Visa">
+                <img src="img/tarjeta1.png" alt="Mastercard">
+                <img src="img/logotipo-de-paypal.png" alt="PayPal">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

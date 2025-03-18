@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC</title>
+    <link rel="stylesheet" href="laptop.css">
+    <script defer>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll(".menu label").forEach(label => {
+                label.addEventListener("click", function() {
+                    let submenu = this.nextElementSibling;
+                    if (submenu.style.display === "block") {
+                        submenu.style.display = "none";
+                    } else {
+                        document.querySelectorAll(".submenu").forEach(sub => sub.style.display = "none");
+                        submenu.style.display = "block";
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" > <img  src="img/Screenshot 2025-02-28 145101.png"  alt="Logo" class="logo"></a> 
+        <a href="#sidebar" class="menu-btn">
+            &#9776; Catálogo
+        </a>
+    </a>
+    <a href="#" class="cart-btn">
+        🛒 Tu Carrito
+    </a>
+    <div id="sidebar" class="sidebar">
+        <a href="#" class="close-btn">✖</a>
+        <ul class="menu">
+            <li>
+                <label> Ordenadores </label>
+                <ul class="submenu" style="display: none;">
+                    <li><a href="laptops.html">Laptops</a></li>
+                    <li><a href="pc.html">PC sobremesa</a></li>
+                    
+                </ul>
+            </li>
+            <li>
+                <label> Componentes </label>
+                <ul class="submenu" style="display: none;">
+                    <li><a href="procesadores.html">Procesadores</a></li>
+                    <li><a href="Graficas.html">Tarjeta Grafica</a></li>
+                    <li><a href="RAM.html">RAM</a></li>
+                </ul>
+
+            </li>
+            <label> Perifericos </label>
+            <ul class="submenu" style="display: none;">
+                <li><a href="Auriculares.html">Auriculares</a></li>
+                <li><a href="teclado.html">Teclados</a></li>
+                <li><a href="mouse.html">Mouse</a></li>
+        </ul>
+    </div>
+
+<hr>
+    <main class="catalogo">
+        <h1 class="catalogo-titulo">Catálogo de PC's</h1>
+        <section class="productos">
+            <div class="product-card">
+                
+                <img src="https://thumb.pccomponentes.com/w-530-530/articles/1084/10846087/1348-pccom-ready-intel-core-i5-12400f-32-gb-1tb-ssd-rtx-4060-opiniones.jpg" alt="Producto 1">
+                <h2>Ordenador Sobremesa PcCom Ready Intel Core i5-12400F / 32 GB / 1TB SSD / RTX 4060</h2>
+                <p class="precio">$669</p>
+                <a href="vermas9.html" class="buy-btn">Ver más</a>
+            </div>
+            <div class="product-card">
+                <span class="discount">-22%</span>
+                <img src="https://thumb.pccomponentes.com/w-530-530/articles/1086/10861258/163-hp-victus-gaming-15l-tg02-0191ns-amd-ryzen-5-16gb-512gb-ssd-rtx-3050-foto.jpg" alt="Producto 2">
+                <h2>Ordenador Sobremesa HP Victus Gaming 15L TG02-0191ns AMD Ryzen 5 5500/16GB/512GB SSD/RTX 3050</h2>
+                <p class="precio">$529</p>
+                <a href="vermas10.html" class="buy-btn">Ver más</a>
+            </div>
+            <div class="product-card">
+                <span class="discount">-5%</span>
+                <img src="https://thumb.pccomponentes.com/w-530-530/articles/1086/10868216/1955-pccom-ultimate-ryzen-7-9800x3d-64gb-2tb-m2-rtx-5080-windows-11-pro-especificaciones.jpg" alt="Producto 3">
+                <h2>Ordenador Sobremesa PcCom Ultimate Ryzen 7 9800X3D / 64GB / 2TB M.2 / RTX 5080 + Windows 11 Pro</h2>
+                <p class="precio">$3669</p>
+                <a href="vermas11.html" class="buy-btn">Ver más</a>
+            </div>
+            <div class="product-card">
+                <img src="https://thumb.pccomponentes.com/w-530-530/articles/1064/10647312/1215-neo-pc-gamer-amd-ryzen-3-3200g-8gb-240gb-ssd-opiniones.jpg" alt="Producto 4">
+                <h2>Neo-PC Gamer AMD Ryzen 3 3200G/8GB/240GB SSD</h2>
+                <p class="precio">$336</p>
+                <a href="vermas12.html" class="buy-btn">Ver más</a>
+            </div>
+            <div class="product-card">
+                <span class="discount">-30%</span>
+                <img src="https://thumb.pccomponentes.com/w-530-530/articles/1086/10863304/1636-aures-gaming-basilisk-lite-a57x-rx76-amd-ryzen-7-5700x-16gb-1tb-ssd-rx-7600.jpg" alt="Producto 5">
+                <h2>Ordenador Sobremesa Aures Gaming Basilisk Lite A57x Rx76 AMD Ryzen 7 5700X/16GB/1TB SSD/RX 7600</h2>
+                <p class="precio">$857</p>
+                <a href="vermas13.html" class="buy-btn">Ver más</a>
+            </div>
+            <div class="product-card">
+                <span class="discount">-7%</span>
+                <img src="https://thumb.pccomponentes.com/w-530-530/articles/1087/10872005/1259-pcvip-98x3d-supreme-amd-ryzen-7-9800x3d-64gb-4tb-ssd-rtx-5090.jpg" alt="Producto 6">
+                <h2>Ordenador Sobremesa PcVIP 98x3d Supreme AMD Ryzen 7 9800X3D/64GB/4TB SSD/RTX 5090</h2>
+                <p class="precio">$5499</p>
+                <a href="vermas14.html" class="buy-btn">Ver más</a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <ul class="socials">
+            <li><img  src="img/facebook.png" alt="Facebook"><span><a href="https://www.facebook.com/">Facebook</a></span></li>
+            <li><img src="img/gorjeo.png" alt="Twitter"><span><a href="https://x.com/">Twitter</a></span></li>
+            <li><img src="img/instagram.png" alt="Instagram"><span><a href="https://www.instagram.com/">Instagram</a></span></li>
+        </ul>
+        <div class="payment-methods">
+            <p>Métodos de Pago</p>
+            <div class="payment-icons">
+                <img src="img/visa.png" alt="Visa">
+                <img src="img/tarjeta1.png" alt="Mastercard">
+                <img src="img/logotipo-de-paypal.png" alt="PayPal">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

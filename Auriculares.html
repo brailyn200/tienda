@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auriculares</title>
+    <link rel="stylesheet" href="laptop.css">
+    <script defer>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll(".menu label").forEach(label => {
+                label.addEventListener("click", function() {
+                    let submenu = this.nextElementSibling;
+                    if (submenu.style.display === "block") {
+                        submenu.style.display = "none";
+                    } else {
+                        document.querySelectorAll(".submenu").forEach(sub => sub.style.display = "none");
+                        submenu.style.display = "block";
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" > <img  src="img/Screenshot 2025-02-28 145101.png"  alt="Logo" class="logo"></a> 
+        <a href="#sidebar" class="menu-btn">
+            &#9776; Catálogo
+        </a>
+    </a>
+    <a href="#" class="cart-btn">
+        🛒 Tu Carrito
+    </a>
+    <div id="sidebar" class="sidebar">
+        <a href="#" class="close-btn">✖</a>
+        <ul class="menu">
+            <li>
+                <label> Ordenadores </label>
+                <ul class="submenu" style="display: none;">
+                    <li><a href="laptops.html">Laptops</a></li>
+                    <li><a href="pc.html">PC sobremesa</a></li>
+                    
+                </ul>
+            </li>
+            <li>
+                <label> Componentes </label>
+                <ul class="submenu" style="display: none;">
+                    <li><a href="procesadores.html">Procesadores</a></li>
+                    <li><a href="Graficas.html">Tarjeta Grafica</a></li>
+                    <li><a href="RAM.html">RAM</a></li>
+                </ul>
+
+            </li>
+            <label> Perifericos </label>
+            <ul class="submenu" style="display: none;">
+                <li><a href="Auriculares.html">Auriculares</a></li>
+                <li><a href="teclado.html">Teclados</a></li>
+                <li><a href="mouse.html">Mouse</a></li>
+        </ul>
+    </div>
+
+<hr>
+    <main class="catalogo">
+        <h1 class="catalogo-titulo">Catálogo de Auriculares</h1>
+        <section class="productos">
+            <div class="product-card">
+                <span class="discount">-28%</span>
+                <img src="https://thumb.pccomponentes.com/w-530-530/articles/78/788555/1118-newskill-sobek-auriculares-gaming-rgb-71-playstation-pc-negros.jpg" alt="Producto 1">
+                <h2>Newskill Sobek 7.1 2ª Gen Auriculares Gaming RGB USB Cancelación de Ruido para PC/PS4/PS5/Mac Negro</h2>
+                <p class="precio">$42</p>
+                <a href="producto1.html" class="buy-btn">Ver más</a>
+            </div>
+            <div class="product-card">
+                <span class="discount">-30%</span>
+                <img src="https://thumb.pccomponentes.com/w-530-530/articles/1079/10792512/1584-forgeon-captain-rgb-auriculares-con-microfono-inalambricos-gaming-blancos-foto.jpg" alt="Producto 2">
+                <h2>Forgeon Captain RGB Auriculares con Micrófono Inalámbricos Gaming Blancos</h2>
+                <p class="precio">$69</p>
+                <a href="producto2.html" class="buy-btn">Ver más</a>
+            </div>
+            <div class="product-card">
+                <span class="discount">-15%</span>
+                <img src="https://thumb.pccomponentes.com/w-530-530/articles/1083/10832301/1797-pccom-essential-energy-auriculares-deportivos-negro-comprar.jpg" alt="Producto 3">
+                <h2>Essential Energy Auriculares Deportivos Negro</h2>
+                <p class="precio">$17</p>
+                <a href="producto3.html" class="buy-btn">Ver más</a>
+            </div>
+            <div class="product-card">
+                <span class="discount">-5%</span>
+                <img src="https://thumb.pccomponentes.com/w-530-530/articles/1077/10777923/3544-airpods-pro-2a-generacion-con-estuche-de-carga-inalambrica-usb-c-blancos-mejor-precio.jpg" alt="Producto 4">
+                <h2>AirPods Pro 2ª Generación con Estuche de Carga Inalámbrica USB-C Blancos</h2>
+                <p class="precio">$289</p>
+                <a href="producto4.html" class="buy-btn">Ver más</a>
+            </div>
+            <div class="product-card">
+                <span class="discount">-10%</span>
+                <img src="https://thumb.pccomponentes.com/w-530-530/articles/1085/10854905/122-apple-airpods-max-medianoche.jpg" alt="Producto 5">
+                <h2>Apple AirPods Max Medianoche</h2>
+                <p class="precio">$579</p>
+                <a href="producto5.html" class="buy-btn">Ver más</a>
+            </div>
+            <div class="product-card">
+                <span class="discount">-30%</span>
+                <img src="https://thumb.pccomponentes.com/w-530-530/articles/57/577538/1197-logitech-g435-lightspeed-auriculares-gaming-inalambricos-negros.jpg" alt="Producto 6">
+                <h2>Logitech G435 LIGHTSPEED Auriculares Gaming Inalámbricos Negros</h2>
+                <p class="precio">$54</p>
+                <a href="producto6.html" class="buy-btn">Ver más</a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <ul class="socials">
+            <li><img  src="img/facebook.png" alt="Facebook"><span><a href="https://www.facebook.com/">Facebook</a></span></li>
+            <li><img src="img/gorjeo.png" alt="Twitter"><span><a href="https://x.com/">Twitter</a></span></li>
+            <li><img src="img/instagram.png" alt="Instagram"><span><a href="https://www.instagram.com/">Instagram</a></span></li>
+        </ul>
+        <div class="payment-methods">
+            <p>Métodos de Pago</p>
+            <div class="payment-icons">
+                <img src="img/visa.png" alt="Visa">
+                <img src="img/tarjeta1.png" alt="Mastercard">
+                <img src="img/logotipo-de-paypal.png" alt="PayPal">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

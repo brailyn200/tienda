@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procesadores</title>
+    <link rel="stylesheet" href="laptop.css">
+    <script defer>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll(".menu label").forEach(label => {
+                label.addEventListener("click", function() {
+                    let submenu = this.nextElementSibling;
+                    if (submenu.style.display === "block") {
+                        submenu.style.display = "none";
+                    } else {
+                        document.querySelectorAll(".submenu").forEach(sub => sub.style.display = "none");
+                        submenu.style.display = "block";
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" > <img  src="img/Screenshot 2025-02-28 145101.png"  alt="Logo" class="logo"></a> 
+        <a href="#sidebar" class="menu-btn">
+            &#9776; Catálogo
+        </a>
+    </a>
+    <a href="#" class="cart-btn">
+        🛒 Tu Carrito
+    </a>
+    <div id="sidebar" class="sidebar">
+        <a href="#" class="close-btn">✖</a>
+        <ul class="menu">
+            <li>
+                <label> Ordenadores </label>
+                <ul class="submenu" style="display: none;">
+                    <li><a href="laptops.html">Laptops</a></li>
+                    <li><a href="pc.html">PC sobremesa</a></li>
+                    
+                </ul>
+            </li>
+            <li>
+                <label> Componentes </label>
+                <ul class="submenu" style="display: none;">
+                    <li><a href="procesadores.html">Procesadores</a></li>
+                    <li><a href="Graficas.html">Tarjeta Grafica</a></li>
+                    <li><a href="RAM.html">RAM</a></li>
+                </ul>
+
+            </li>
+            <label> Perifericos </label>
+            <ul class="submenu" style="display: none;">
+                <li><a href="Auriculares.html">Auriculares</a></li>
+                <li><a href="teclado.html">Teclados</a></li>
+                <li><a href="mouse.html">Mouse</a></li>
+        </ul>
+    </div>
+
+<hr>
+    <main class="catalogo">
+        <h1 class="catalogo-titulo">Catálogo de Procesadores</h1>
+        <section class="productos">
+            <div class="product-card">
+                
+                <img src="https://thumb.pccomponentes.com/w-530-530/articles/83/834922/1636-intel-core-i5-12400f-44-ghz.jpg" alt="Producto 1">
+                <h2>Intel Core i5-12400F 2.5 GHz</h2>
+                <p class="precio">$169</p>
+                <a href="vermas15.html" class="buy-btn">Ver más</a>
+            </div>
+            <div class="product-card">
+                <img src="https://thumb.pccomponentes.com/w-530-530/articles/1086/10860456/1996-amd-ryzen-7-9800x3d-47-52ghz.jpg" alt="Producto 2">
+                <h2> AMD Ryzen 7 9800X3D 4.7/5.2GHz</h2>
+                <p class="precio">$749</p>
+                <a href="vermas16.html" class="buy-btn">Ver más</a>
+            </div>
+            <div class="product-card">
+                <span class="discount">-13%</span>
+                <img src="https://thumb.pccomponentes.com/w-530-530/articles/1077/10779171/1341-intel-core-i7-14700k-34-56ghz-box.jpg" alt="Producto 3">
+                <h2>Intel Core i7-14700K 3.4/5.6GHz</h2>
+                <p class="precio">$389</p>
+                <a href="vermas17.html" class="buy-btn">Ver más</a>
+            </div>
+            <div class="product-card">
+                <img src="https://thumb.pccomponentes.com/w-530-530/articles/1020/10204431/162-amd-ryzen-5-5500-36ghz-box-mejor-precio.jpg" alt="Producto 4">
+                <h2>AMD Ryzen 5 5500 3.6GHz</h2>
+                <p class="precio">$189</p>
+                <a href="vermas18.html" class="buy-btn">Ver más</a>
+            </div>
+            <div class="product-card">
+                <span class="discount">-21%</span>
+                <img src="https://thumb.pccomponentes.com/w-530-530/articles/1065/10656484/1177-amd-ryzen-9-7900-37-54-ghz-box.jpg" alt="Producto 5">
+                <h2>AMD Ryzen 9 7900 3.7/5.4 GHz Box"</h2>
+                <p class="precio">$364</p>
+                <a href="vermas19.html" class="buy-btn">Ver más</a>
+            </div>
+            <div class="product-card">
+                <span class="discount">-40%</span>
+                <img src="https://thumb.pccomponentes.com/w-530-530/articles/57/574290/1840-intel-core-i9-12900kf-52-ghz.jpg" alt="Producto 6">
+                <h2>Intel Core i9-12900KF 3.2 GHz</h2>
+                <p class="precio">$362</p>
+                <a href="vermas20.html" class="buy-btn">Ver más</a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <ul class="socials">
+            <li><img  src="img/facebook.png" alt="Facebook"><span><a href="https://www.facebook.com/">Facebook</a></span></li>
+            <li><img src="img/gorjeo.png" alt="Twitter"><span><a href="https://x.com/">Twitter</a></span></li>
+            <li><img src="img/instagram.png" alt="Instagram"><span><a href="https://www.instagram.com/">Instagram</a></span></li>
+        </ul>
+        <div class="payment-methods">
+            <p>Métodos de Pago</p>
+            <div class="payment-icons">
+                <img src="img/visa.png" alt="Visa">
+                <img src="img/tarjeta1.png" alt="Mastercard">
+                <img src="img/logotipo-de-paypal.png" alt="PayPal">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

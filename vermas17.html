@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Producto</title>
+    <link rel="stylesheet" href="vermas.css">
+</head>
+<body>
+    <script defer>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll(".menu label").forEach(label => {
+                label.addEventListener("click", function() {
+                    let submenu = this.nextElementSibling;
+                    if (submenu.style.display === "block") {
+                        submenu.style.display = "none";
+                    } else {
+                        document.querySelectorAll(".submenu").forEach(sub => sub.style.display = "none");
+                        submenu.style.display = "block";
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" > <img  src="img/Screenshot 2025-02-28 145101.png"  alt="Logo" class="logo"></a> 
+        <a href="#sidebar" class="menu-btn">
+            &#9776; Catálogo
+        </a>
+    </a>
+    <a href="#" class="cart-btn">
+        🛒 Tu Carrito
+    </a>
+    <div id="sidebar" class="sidebar">
+        <a href="#" class="close-btn">✖</a>
+        <ul class="menu">
+            <li>
+                <label> Ordenadores </label>
+                <ul class="submenu" style="display: none;">
+                    <li><a href="laptops.html">Laptops</a></li>
+                    <li><a href="pc.html">PC sobremesa</a></li>
+                    
+                </ul>
+            </li>
+            <li>
+                <label> Componentes </label>
+                <ul class="submenu" style="display: none;">
+                    <li><a href="procesadores.html">Procesadores</a></li>
+                    <li><a href="Graficas.html">Tarjeta Grafica</a></li>
+                    <li><a href="RAM.html">RAM</a></li>
+                </ul>
+
+            </li>
+            <label> Perifericos </label>
+            <ul class="submenu" style="display: none;">
+                <li><a href="Auriculares.html">Auriculares</a></li>
+                <li><a href="teclado.html">Teclados</a></li>
+                <li><a href="mouse.html">Mouse</a></li>
+        </ul>
+    </div>
+
+<hr>
+
+<main class="detalle-producto">
+    <div class="imagen-producto">
+        <img src="https://thumb.pccomponentes.com/w-530-530/articles/1077/10779171/1341-intel-core-i7-14700k-34-56ghz-box.jpg" alt="Producto">
+    </div>
+
+    <div class="info-producto">
+        <h1 class="nombre-producto">Intel Core i5-12400F 2.5 GHz</h1>
+        <ul class="especificaciones">
+            <li><strong>Socket:</strong> LGA 1700</li>
+            <li><strong>Número de núcleos de CPU:</strong> 8</li>
+            <li><strong>Nº de hilos:</strong> 12</li>
+            <li><strong>Reloj base:</strong> 3,40 GHz</li>
+            <li><strong>Reloj de impulso máximo:</strong> 5,60 GHz</li>
+            <li><strong>Modelo gráfico:</strong> Intel® UHD Graphics 770</li>
+        </ul>
+    </div>
+
+    <div class="precio-producto">
+        <div class="precio-card">
+            <p class="precio">$389</p>
+            <p class="envio">Envío gratis a todo el país</p>
+            <button class="boton-carrito">Añadir al carrito</button>
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    <ul class="socials">
+        <li><img  src="img/facebook.png" alt="Facebook"><span><a href="https://www.facebook.com/">Facebook</a></span></li>
+        <li><img src="img/gorjeo.png" alt="Twitter"><span><a href="https://x.com/">Twitter</a></span></li>
+        <li><img src="img/instagram.png" alt="Instagram"><span><a href="https://www.instagram.com/">Instagram</a></span></li>
+    </ul>
+    <div class="payment-methods">
+        <p>Métodos de Pago</p>
+        <div class="payment-icons">
+            <img src="img/visa.png" alt="Visa">
+            <img src="img/tarjeta1.png" alt="Mastercard">
+            <img src="img/logotipo-de-paypal.png" alt="PayPal">
+        </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse</title>
+    <link rel="stylesheet" href="laptop.css">
+    <script defer>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll(".menu label").forEach(label => {
+                label.addEventListener("click", function() {
+                    let submenu = this.nextElementSibling;
+                    if (submenu.style.display === "block") {
+                        submenu.style.display = "none";
+                    } else {
+                        document.querySelectorAll(".submenu").forEach(sub => sub.style.display = "none");
+                        submenu.style.display = "block";
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" > <img  src="img/Screenshot 2025-02-28 145101.png"  alt="Logo" class="logo"></a> 
+        <a href="#sidebar" class="menu-btn">
+            &#9776; Catálogo
+        </a>
+    </a>
+    <a href="#" class="cart-btn">
+        🛒 Tu Carrito
+    </a>
+    <div id="sidebar" class="sidebar">
+        <a href="#" class="close-btn">✖</a>
+        <ul class="menu">
+            <li>
+                <label> Ordenadores </label>
+                <ul class="submenu" style="display: none;">
+                    <li><a href="laptops.html">Laptops</a></li>
+                    <li><a href="pc.html">PC sobremesa</a></li>
+                    
+                </ul>
+            </li>
+            <li>
+                <label> Componentes </label>
+                <ul class="submenu" style="display: none;">
+                    <li><a href="procesadores.html">Procesadores</a></li>
+                    <li><a href="Graficas.html">Tarjeta Grafica</a></li>
+                    <li><a href="RAM.html">RAM</a></li>
+                </ul>
+
+            </li>
+            <label> Perifericos </label>
+            <ul class="submenu" style="display: none;">
+                <li><a href="Auriculares.html">Auriculares</a></li>
+                <li><a href="teclado.html">Teclados</a></li>
+                <li><a href="mouse.html">Mouse</a></li>
+        </ul>
+    </div>
+
+<hr>
+    <main class="catalogo">
+        <h1 class="catalogo-titulo">Catálogo de Mouse</h1>
+        <section class="productos">
+            <div class="product-card">
+                <span class="discount">-20%</span>
+                <img src="https://thumb.pccomponentes.com/w-530-530/articles/40/409500/1750-tempest-x8-keeper-rgb-raton-gaming-10000dpi.jpg" alt="Producto 1">
+                <h2>Tempest X8 Keeper RGB Ratón Gaming 10.000 DPI Negro</h2>
+                <p class="precio">$19</p>
+                <a href="producto1.html" class="buy-btn">Ver más</a>
+            </div>
+            <div class="product-card">
+                <img src="https://thumb.pccomponentes.com/w-530-530/articles/28/287353/logitech-g203-lightsync-2nd-gen-raton-gaming-8000dpi-rgb-negro.jpg" alt="Producto 2">
+                <h2>Logitech G203 Lightsync 2nd Gen Ratón Gaming 8000DPI RGB Negro</h2>
+                <p class="precio">$44</p>
+                <a href="producto2.html" class="buy-btn">Ver más</a>
+            </div>
+            <div class="product-card">
+                
+                <img src="https://thumb.pccomponentes.com/w-530-530/articles/19/191822/atreo-web-000.jpg" alt="Producto 3">
+                <h2>Newskill Atreo Ratón Gaming RGB 6200 DPI</h2>
+                <p class="precio">$25</p>
+                <a href="producto3.html" class="buy-btn">Ver más</a>
+            </div>
+            <div class="product-card">
+                <img src="https://thumb.pccomponentes.com/w-530-530/articles/1048/10488605/1393-steelseries-aerox-3-wireless-2022-snow-raton-gaming-inalambrico-18000dpi.jpg" alt="Producto 4">
+                <h2>SteelSeries Aerox 3 Wireless 2022 Blanco</h2>
+                <p class="precio">$59</p>
+                <a href="producto4.html" class="buy-btn">Ver más</a>
+            </div>
+            <div class="product-card">
+                <span class="discount">-10%</span>
+                <img src="https://thumb.pccomponentes.com/w-530-530/articles/1049/10499038/1514-logitech-g-g502-x-plus-lightspeed-raton-inalambrico-rgb-gaming-blanco-25600-dpi.jpg" alt="Producto 5">
+                <h2>Logitech G G502 X Plus Lightspeed Ratón Inalámbrico RGB Gaming 25600 DPI Blanco</h2>
+                <p class="precio">$135</p>
+                <a href="producto5.html" class="buy-btn">Ver más</a>
+            </div>
+            <div class="product-card">
+                <span class="discount">-30%</span>
+                <img src="https://thumb.pccomponentes.com/w-530-530/articles/1081/10819701/1205-asus-rog-keris-ii-ace-raton-gaming-inalambrico-42000dpi-negro.jpg" alt="Producto 6">
+                <h2>ASUS ROG Keris II Ace Ratón Gaming Inalámbrico 42000DPI Negro</h2>
+                <p class="precio">$139</p>
+                <a href="producto6.html" class="buy-btn">Ver más</a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <ul class="socials">
+            <li><img  src="img/facebook.png" alt="Facebook"><span><a href="https://www.facebook.com/">Facebook</a></span></li>
+            <li><img src="img/gorjeo.png" alt="Twitter"><span><a href="https://x.com/">Twitter</a></span></li>
+            <li><img src="img/instagram.png" alt="Instagram"><span><a href="https://www.instagram.com/">Instagram</a></span></li>
+        </ul>
+        <div class="payment-methods">
+            <p>Métodos de Pago</p>
+            <div class="payment-icons">
+                <img src="img/visa.png" alt="Visa">
+                <img src="img/tarjeta1.png" alt="Mastercard">
+                <img src="img/logotipo-de-paypal.png" alt="PayPal">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
